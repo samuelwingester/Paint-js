@@ -1,0 +1,52 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#frame{
+    z-index: 2;
+}
+
+#brush{
+    cursor: none;
+    z-index: 3;
+}
+
+#background{
+    z-index: 1;
+}
+
+#canvas-container{
+    position: relative;
+    width: 100%;
+    height: 90vh;
+}
+
+canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    image-rendering: pixelated;
+}
+
+#tools-container{
+    height: 10vh;
+    width: 100%;
+    background-color: gray;
+    display: grid;
+    padding: 0 30%;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    text-align: right;
+    column-gap: 50px;
+}

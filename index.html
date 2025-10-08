@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplePaint</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="tools-container">
+        <button id="draw">PINCEL</button>
+        <button id="erase">BORRACHA</button>
+        <button id="reundo">REDESFAZER</button> 
+        <button id="clear">LIMPAR</button>
+
+        <label for="size">TAMANHO:</label>
+        <input type="range" name="size" id="size" min="5" max="500" value="20">
+        
+        <label for="color">COR:</label>
+        <input type="color" name="color" id="color">
+        
+        <label for="background">COR DE FUNDO:</label>
+        <input type="color" name="background" id="background_color">
+        
+        <button id="undo">DESFAZER</button>
+        
+    </div>
+    <div id="canvas-container">
+        <canvas id="background" width="" height=""></canvas>
+        <canvas id="frame" width="" height=""></canvas>
+        <canvas id="brush" width="" height=""></canvas>
+    </div>
+</body>
+
+</html>
