@@ -41,12 +41,18 @@ canvas{
 
 #tools-container{
     height: 10vh;
-    width: 100%;
-    background-color: gray;
+    width: 50%;
     display: grid;
-    padding: 0 30%;
     grid-template-columns: repeat(4,1fr);
     align-items: center;
     text-align: right;
     column-gap: 50px;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: gray;
 }
